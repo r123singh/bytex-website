@@ -5,80 +5,204 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechSavvy Dev</title>
   <style>
-    /* Basic Styling */
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #f9f9f9;
-    }
-    h1, h2, h3 {
-      color: #3498db;
-    }
-    a {
-      text-decoration: none;
-      color: #2ecc71;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .section {
-      margin-bottom: 60px;
-    }
-    .cta-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #f1c40f;
-      color: white;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    .cta-button:hover {
-      background-color: #2ecc71;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .project-card {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-    .project-card:hover {
-      transform: scale(1.05);
-    }
-    .testimonial {
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .pricing-table {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .pricing-card {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-    }
-    .pricing-card.popular {
-      border: 2px solid #2ecc71;
-    }
+   /* Advanced Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #100d74;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f1c40f;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+header {
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Projects Section */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Testimonials Section */
+.testimonial {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Pricing Section */
+.pricing-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.pricing-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.popular {
+  border: 2px solid #2ecc71;
+  background: #f1f8f4;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.pricing-card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  align-self: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .pricing-card {
+    padding: 15px;
+  }
+
+  .testimonial {
+    display: none; /* Hidden by default for slider */
+  }
+}
   </style>
 </head>
 <body>
@@ -92,32 +216,50 @@
     </div>
   </header>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Featured Projects</h2>
-      <div class="grid">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x300" alt="E-commerce Storefront">
-          <h3>E-commerce Storefront</h3>
-          <p>A fully responsive e-commerce storefront built using Shopify and WordPress.</p>
-          <a href="#" class="cta-button">View Project</a>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x300" alt="Portfolio Website Redesign">
-          <h3>Portfolio Website Redesign</h3>
-          <p>A modernized portfolio website featuring dynamic animations and CMS integration.</p>
-          <a href="#" class="cta-button">View Project</a>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x300" alt="SaaS Dashboard">
-          <h3>SaaS Dashboard</h3>
-          <p>A user-friendly dashboard interface built using React for managing subscriptions and analytics.</p>
-          <a href="#" class="cta-button">View Project</a>
-        </div>
+ <!-- Projects Section -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <div class="grid">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-commerce Storefront">
+        <h3>E-commerce Storefront</h3>
+        <p>A fully responsive e-commerce storefront built using Shopify and WordPress.</p>
+        <a href="#" class="cta-button">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1554316311-bf0c85d5a18a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio Website Redesign">
+        <h3>Portfolio Website Redesign</h3>
+        <p>A modernized portfolio website featuring dynamic animations and CMS integration.</p>
+        <a href="#" class="cta-button">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1586424539881-964b0ba9c92e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SaaS Dashboard">
+        <h3>SaaS Dashboard</h3>
+        <p>A user-friendly dashboard interface built using React for managing subscriptions and analytics.</p>
+        <a href="#" class="cta-button">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mobile-First Blog Platform">
+        <h3>Mobile-First Blog Platform</h3>
+        <p>A blog optimized for mobile users with fast load times and AMP support.</p>
+        <a href="#" class="cta-button">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e59ec6ce5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Landing Page Funnel">
+        <h3>Landing Page Funnel</h3>
+        <p>High-converting landing pages designed for startups with lead capture forms.</p>
+        <a href="#" class="cta-button">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Custom Web App Prototype">
+        <h3>Custom Web App Prototype</h3>
+        <p>A prototype of an innovative web app idea demonstrating full-stack skills.</p>
+        <a href="#" class="cta-button">View Project</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Services Section -->
   <section id="services" class="section">
@@ -222,6 +364,40 @@
       <p>&copy; 2023 TechSavvy Dev. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    // Testimonial Slider
+    document.addEventListener("DOMContentLoaded", () => {
+      const testimonials = document.querySelectorAll(".testimonial");
+      let currentIndex = 0;
+  
+      function showTestimonial(index) {
+        testimonials.forEach((testimonial, i) => {
+          testimonial.style.display = i === index ? "block" : "none";
+        });
+      }
+  
+      function nextTestimonial() {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        showTestimonial(currentIndex);
+      }
+  
+      // Show first testimonial initially
+      showTestimonial(currentIndex);
+  
+      // Auto-rotate testimonials every 5 seconds
+      setInterval(nextTestimonial, 5000);
+    });
+  
+    // Pricing Accordion (for mobile)
+    document.querySelectorAll(".pricing-card").forEach(card => {
+      card.addEventListener("click", () => {
+        if (window.innerWidth < 768) {
+          card.classList.toggle("expanded");
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
