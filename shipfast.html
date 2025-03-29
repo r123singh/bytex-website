@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechSavvy Dev</title>
+  <style>
+    /* Basic Styling */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    h1, h2, h3 {
+      color: #3498db;
+    }
+    a {
+      text-decoration: none;
+      color: #2ecc71;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f1c40f;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #2ecc71;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    .testimonial {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .pricing-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .pricing-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+    .pricing-card.popular {
+      border: 2px solid #2ecc71;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="section">
+    <div class="container">
+      <h1>Where Product Management Meets Web Development Expertise</h1>
+      <p>Transforming ideas into seamless digital experiences with expert web development and strategic product management.</p>
+      <a href="#projects" class="cta-button">Explore My Work</a>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x300" alt="E-commerce Storefront">
+          <h3>E-commerce Storefront</h3>
+          <p>A fully responsive e-commerce storefront built using Shopify and WordPress.</p>
+          <a href="#" class="cta-button">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x300" alt="Portfolio Website Redesign">
+          <h3>Portfolio Website Redesign</h3>
+          <p>A modernized portfolio website featuring dynamic animations and CMS integration.</p>
+          <a href="#" class="cta-button">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x300" alt="SaaS Dashboard">
+          <h3>SaaS Dashboard</h3>
+          <p>A user-friendly dashboard interface built using React for managing subscriptions and analytics.</p>
+          <a href="#" class="cta-button">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="grid">
+        <div>
+          <h3>Web Development</h3>
+          <p>Front-end, back-end, and full-stack development tailored to your needs.</p>
+        </div>
+        <div>
+          <h3>Product Management</h3>
+          <p>Strategic planning, execution, and optimization for digital products.</p>
+        </div>
+        <div>
+          <h3>E-commerce Solutions</h3>
+          <p>Custom Shopify and WordPress stores with SEO and payment integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="grid">
+        <div class="testimonial">
+          <p>"TechSavvy Dev delivered an outstanding e-commerce platform that exceeded our expectations. Highly recommend!"</p>
+          <p><strong>Jane Doe</strong>, CEO of XYZ Company</p>
+        </div>
+        <div class="testimonial">
+          <p>"The team transformed our outdated website into a modern, high-performing platform. Exceptional work!"</p>
+          <p><strong>John Smith</strong>, Founder of ABC Startup</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Packages Section -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2>Pricing Packages</h2>
+      <div class="pricing-table">
+        <div class="pricing-card">
+          <h3>Basic</h3>
+          <p>$500</p>
+          <ul>
+            <li>Up to 5 pages</li>
+            <li>Custom Design</li>
+            <li>No SEO Optimization</li>
+          </ul>
+          <a href="#" class="cta-button">Select Package</a>
+        </div>
+        <div class="pricing-card popular">
+          <h3>Pro</h3>
+          <p>$1,000</p>
+          <ul>
+            <li>Up to 10 pages</li>
+            <li>Custom Design</li>
+            <li>SEO Optimization</li>
+          </ul>
+          <a href="#" class="cta-button">Select Package</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Premium</h3>
+          <p>$2,000</p>
+          <ul>
+            <li>Unlimited pages</li>
+            <li>Custom Design</li>
+            <li>SEO Optimization</li>
+            <li>E-commerce Integration</li>
+          </ul>
+          <a href="#" class="cta-button">Select Package</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+      <div>
+        <p>Email: <a href="mailto:info@techsavvydev.com">info@techsavvydev.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 TechSavvy Dev. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
